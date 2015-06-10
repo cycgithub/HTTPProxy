@@ -90,7 +90,7 @@ void on_read(int sock)
 
 	    // cout<<"recvbyte:"<<recvbyte<<endl;
        if(recvbyte<=0)
-					 break ;
+		break ;
 			 send(sock,buffer1,recvbyte,0);
 			 countbyte+=recvbyte;
 			 str.append(buffer1,recvbyte);
